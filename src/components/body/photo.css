@@ -1,0 +1,16 @@
+.firstphoto{
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin-top: 2px;
+
+}
+@media screen and (max-width:625px){
+.firstphoto{
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+}
