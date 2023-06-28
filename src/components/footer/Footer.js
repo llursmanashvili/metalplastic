@@ -67,30 +67,22 @@ export default function Footer() {
 
                 <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">კონტაქტი</h6>
-                  <p>
-                    <MDBIcon
-                      color="secondary"
-                      icon="map-marker-alt"
-                      className="me-2"
-                    />
-                    New York, NY 10012, US
-                  </p>
 
                   <p>
                     <MDBIcon
-                      color="secondary"
+                      color="success"
                       icon="phone-alt"
                       className="me-3"
                     />{" "}
-                    + 01 234 567 88
+                    +995 599 95 56 94
                   </p>
                   <p>
                     <MDBIcon
-                      color="secondary"
+                      color="success"
                       icon="phone-alt"
                       className="me-3"
                     />{" "}
-                    + 01 234 567 88
+                    +995 558 55 58 99
                   </p>
                 </MDBCol>
               </MDBRow>

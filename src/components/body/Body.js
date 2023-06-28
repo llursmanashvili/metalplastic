@@ -1,8 +1,18 @@
 import React from "react";
 import photo1 from "./door.jpg";
 import { MDBBtn } from "mdb-react-ui-kit";
-
+import "react-native";
+import call from "react-native-phone-call/index";
 function Body() {
+  const triggercall = () => {
+    const args = {
+      number: " +995 599 95 56 94 ", // String value with the number to call
+      prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call
+      skipCanOpen: true, // Skip the canOpenURL check
+    };
+
+    call(args).catch(console.error);
+  };
   return (
     <div
       className="p-5 text-center bg-image"
@@ -21,7 +31,7 @@ function Body() {
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-white">
             <h1 className="mb-3">დაგვირეკეთ ახლავე</h1>
-            <MDBBtn href="" tag="a" outline size="lg">
+            <MDBBtn onClick={triggercall} href="" tag="a" outline size="lg">
               დარეკვა
             </MDBBtn>
           </div>
