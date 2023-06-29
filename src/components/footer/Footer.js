@@ -7,6 +7,7 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -34,35 +35,25 @@ export default function Footer() {
                       ალუმინის კარ-ფანჯარა
                     </a>
                   </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      საკეტები
-                    </a>
-                  </p>
                 </MDBCol>
 
                 <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">გვერდები</h6>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      მთავარი
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      ჩვენ შესახებ
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      კონტაქტი
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      სერვისები
-                    </a>
-                  </p>
+                  <Link to="/">
+                    <p>
+                      <a className="text-reset">მთავარი</a>
+                    </p>
+                  </Link>
+                  <Link to="/aboutus">
+                    <p>
+                      <a className="text-reset">ჩვენ შესახებ</a>
+                    </p>
+                  </Link>
+                  <Link to="/contact">
+                    <p>
+                      <a className="text-reset">კონტაქტი</a>
+                    </p>
+                  </Link>
                 </MDBCol>
 
                 <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
