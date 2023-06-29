@@ -11,10 +11,11 @@ import {
 import "./card.css";
 import plastic from "./plastic.jpg";
 import alumin from "./alumin.jpg";
+import { Link } from "react-router-dom";
 export default function Card() {
   return (
     <>
-      <a href="/aluminium">
+      <Link to="/aluminium">
         <MDBCard className="Cardi">
           <MDBRow>
             <MDBCol>
@@ -35,8 +36,8 @@ export default function Card() {
             </MDBCol>
           </MDBRow>
         </MDBCard>
-      </a>
-      <a href="/metalplastic">
+      </Link>
+      <Link to="/metalplastic">
         <MDBCard className="Cardi">
           <MDBRow>
             <MDBCol>
@@ -62,7 +63,7 @@ export default function Card() {
             </MDBCol>
           </MDBRow>
         </MDBCard>
-      </a>
+      </Link>
     </>
   );
 }

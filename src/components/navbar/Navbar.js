@@ -65,12 +65,12 @@ export default function Navbar() {
                   </MDBDropdownToggle>
 
                   <MDBDropdownMenu>
-                    <Link to="/tech">
+                    <Link to="/metalplastic">
                       <MDBDropdownItem link>
                         მეტალო-პლასტმასის კარფ-ანჯარა
                       </MDBDropdownItem>
                     </Link>
-                    <Link to="/tech">
+                    <Link to="/aluminium">
                       <MDBDropdownItem link>
                         ალუმინის კარ-ფანჯარა
                       </MDBDropdownItem>

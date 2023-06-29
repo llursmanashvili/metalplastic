@@ -9,10 +9,14 @@ import ml5 from "./photos/ml8.jpg";
 import ml8 from "./photos/ml12.jpg";
 import ml10 from "./photos/ml14.jpg";
 import ml11 from "./photos/ml15.jpg";
+import { useEffect } from "react";
 
 import "./photo.css";
 
 function Photo() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const photos = [
     { id: 11, image: ml10 },
     { id: 12, image: ml11 },

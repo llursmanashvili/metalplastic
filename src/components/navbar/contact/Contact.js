@@ -3,8 +3,12 @@ import "./contact.css";
 import "react-native";
 import call from "react-native-phone-call/index";
 import { MDBIcon } from "mdb-react-ui-kit";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const triggercall = () => {
     const args = {
       number: " +995 599 95 56 94 ", // String value with the number to call

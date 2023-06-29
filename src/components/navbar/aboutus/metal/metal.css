@@ -1,0 +1,21 @@
+h2{
+    margin:20px;
+    margin-top: 50px;
+    font-size: larger;
+    
+}
+.photosbanner{
+    margin: 50px;
+}
+@media only screen and (max-width:715px){
+    .photosbanner{
+        margin: 10px;
+    }
+    h2{
+        margin:20px;
+        margin-top: 20px;
+        font-size: larger;
+        
+    }
+
+}

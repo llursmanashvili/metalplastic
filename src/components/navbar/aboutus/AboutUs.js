@@ -11,12 +11,15 @@ import "./aboutus.css";
 import service from "./makeof.jpg";
 import service1 from "./transport.jpg";
 import service2 from "./final.jpg";
-import Body from "../../body/Body";
 import { MDBBtn } from "mdb-react-ui-kit";
 import photo2 from "./ml13.jpg";
 import call from "react-native-phone-call/index";
+import { useEffect } from "react";
 
 function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const triggercall = () => {
     const args = {
       number: " +995 599 95 56 94 ", // String value with the number to call

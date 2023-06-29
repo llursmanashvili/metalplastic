@@ -7,6 +7,8 @@ import Card from "./components/body/card";
 import Photo from "./components/body/photo";
 import Contact from "./components/navbar/contact/Contact";
 import AboutUs from "./components/navbar/aboutus/AboutUs";
+import Metal from "./components/navbar/aboutus/metal/metal";
+import MetalPlastic from "./components/navbar/aboutus/metalplastic/metalplastic";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/" element={[<Photo />, <Card />, <Body />]} />
         <Route path="/contact" element={[<Contact />]} />
         <Route path="/aboutus" element={[<AboutUs />]} />
+        <Route path="/aluminium" element={[<Metal />]} />
+        <Route path="/metalplastic" element={[<MetalPlastic />]} />
       </Routes>
 
       <footer>
