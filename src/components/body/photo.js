@@ -44,7 +44,7 @@ function Photo() {
 
   return (
     <div className="photosbanner">
-      <Carousel>
+      <Carousel data-interval="1000">
         {photos.map((photo, i) => {
           return (
             <Carousel.Item key={i}>
